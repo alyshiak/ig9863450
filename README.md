@@ -1,7 +1,7 @@
-# AI Based Meme Generator
+# AI Based Content Generator
 
 ## Description 
-A webpage which generates a meme by using one AI to generate an image and another AI to generate text.
+A webpage which generates content by using one AI to generate an image and another AI to generate text.
 
 ## Authors
 Zafar Ahmed, Alyshia Kandler, Callum Mackintosh
