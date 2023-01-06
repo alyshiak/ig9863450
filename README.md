@@ -1,7 +1,7 @@
 # AI Based Content Generator
 
 ## Description 
-A webpage which generates content by using one AI to generate an image and another AI to generate text.
+A webpage which generates content by using Artificial intelligence APIs based on the user input.
 
 ## Authors
 Zafar Ahmed, Alyshia Kandler, Callum Mackintosh
