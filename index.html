@@ -4,31 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
     <link rel="stylesheet" href="assets\styles.css">
+
+
     <title>Document</title>
 </head>
+
+
 <body>
     <!-- <input id="search-text"type="text">
     <button id="search-button">Search</button>
     <img id="ai-generate-image" src="" alt="AI image">
      -->
-
+      
      <header>
         <div class="header-section">
             <!-- <img src="cloud-icon2.svg" alt="logo" class="logo"> -->
             <p>AI Art</p>
+
+            <ul>
+                <li>
+                    How to use
+                </li>
+                <li>
+                    Team 
+                </li>
+                <li>
+                    Roadmap
+                </li>
+            </ul>
+
         </div>
     </header>
 
+    <section id="introduction">        
+        <h1>Take your creative possibilities to the next level with AI-generated images and texts</h1>
+        <br>
+        <p>Our platform turns your ideas into stunning visuals in just a few clicks. <br><br>
+            Try it out and see the magic for yourself!
+            </p>
+    </section>
+
+    <section id="vincent">
+
+        <p id="kk">
+
+        <img src="assets\image2.jpg" alt="" id="two">
+        <img src="assets\transform.jpg" alt="" id="one">
+
+         </p>
+
+        <div>
+            <h1>Vincient</h1>
+            <p>Vincent is AI-powered image generator that allows you to create multiple unique images from a single piece of text. Simply type in your desired text and watch as our platform produces a variety of visually stunning options for you to choose from. 
+
+            <br><br>Give it a try and see how the AI technology can elevate your project to the next level.</p>
+            <input type="button" value="Try now" id="trynow-button">
+
+        </div>
+
+        </p>
+    </section>
+<br><br>
+    <section id="kafka">        
+        <div>
+            <h1>TweetInspector</h1>
+            <p> TweetInspector is a powerful tool that helps to promote equality and 
+                inclusivity online. By using advanced artificial technology, it is able to quickly and 
+                accurately scan text for any instances of racism, hate speech, gender bias, and discrimination. 
+                <br><br>
+                Simply copy and paste your text into our the search bar and let the technology do the rest. 
+                With TweetInspector, you can be confident that your words are respectful and inclusive.
+            </p>
+            <input type="button" value="Try now" id="trynow-button">
+
+        </div>
+        <p id="kk">
+
+            <img src="assets\kafka.jpg" alt="" id="two">
+            <img src="assets\transform.jpg" alt="" id="one">
+    
+             </p>
+    
+        </p>
+    </section>
+
     <section class="search-section search-section-animate">
-        <h1>Visualize your imagination with our AI picture generator</h1>
+        <h1>Vincient</h1>
+
         <p id="error-message"> </p>
         <span id="search-icon">⌕</span>
         <input type="search" id="search-text" placeholder="Type the image description here.." autocomplete="off"></input>
         <input type="button" value="Search" id="search-button">
         <p id="previous-searches"></p>
         <div class="image-grid">
-            <img  class="ai-generate-image" id="ai-generate-image1" src="assets\image1.jpg" alt="AI image">
+            <a href="image1.jpg" download="image1.jpg"><img  class="ai-generate-image" id="ai-generate-image1" src="assets\image1.jpg" alt="AI image"></a>
             <img  class="ai-generate-image" id="ai-generate-image2" src="assets\image2.jpg" alt="AI image">
             <img  class="ai-generate-image" id="ai-generate-image3" src="assets\image3.jpg" alt="AI image">
             <img  class="ai-generate-image" id="ai-generate-image4" src="assets\image4.jpg" alt="AI image">
@@ -41,7 +113,30 @@
 
     </section>
 
+    <section class="search-section search-section-animate">
+
+    <h1>TweetInspector</h1>
+    
+    <p id="error-message"> </p>
+    <span id="search-icon">⌕</span>
+    <input type="text" id="search-text" placeholder="Type your tweet here.." autocomplete="off"></input>
+    <input type="button" value="Search" id="search-button">
+    <p id="previous-searches"></p>
+</section>
+
+
+<br><br>
+    <footer>
+        <div class="footer-section">
+            <!-- <img src="cloud-icon2.svg" alt="logo" class="logo"> -->
+            <p>Powered by OpenAI</p>
+
+
+        </div>
+    </footer>
+
 <script src="assets\script.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
 </body>
 </html>
