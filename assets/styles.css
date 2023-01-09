@@ -1,19 +1,41 @@
 :root{
-    --headerColor: #003C71;
-    --ThemeColor: #D8F4FF;
-    --forecastThemeColor: #414141;
+    --headerColor: #fceec3;
+    --ThemeColor: #FFE699;
     background-color: var(--ThemeColor);
 
 }
 
-h1
+#kk
+{
+    position: relative;
+    margin-top: 50px;
+}
+
+#one
+{
+    position: relative;
+    transform: rotate(20deg);
+    opacity: 0.6;
+
+}
+
+#two
+{
+    position: absolute;
+    z-index: 1;
+}
+
+#introduction h1
 {
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: xx-large;
     width: 40%;
     text-align: center;
     margin: auto;
+    text-shadow: 1px 1px 2px #000000;
+
 }
+
 .ai-generate-image
 {
     width: 215px;
@@ -21,6 +43,59 @@ h1
     margin: 5px;
 
 }
+
+#vincent
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#vincent div
+{
+    margin-left: 2%;
+    width: 350px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#vincent img
+{
+width: 250px;
+margin-right: 20px;
+border-radius: 25px;
+box-shadow: 0px 14px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#kafka
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+#kafka div
+{
+    width: 40%;
+    margin-right: 2%;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 350px;
+
+}
+#kafka img
+{
+width: 250px;
+margin-left: 20px;
+border-radius: 25px;
+box-shadow: 0px 14px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
 
 .image-grid
 {
@@ -33,23 +108,52 @@ h1
     width: 60%;
     
 }
-li{
+
+
+.header-section li{
     list-style: none;
     width: fit-content;
     display: inline-block;
     text-align: center;
-    padding: 5px;
-    margin: 5px;
     display: inline-block;
+    margin: 0px 15px 0px 15px;
+    margin-right: 25px;
     border-radius: 5px;
-    background-color: #a5e4ff;
+    font-size: large;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
-li:hover
+.header-section li:hover
 {
-    background-color: #223342;
-    color: white;
+    background-color: var(--ThemeColor);
+    color: black;
     cursor: pointer;
+}
+
+#introduction
+{
+
+padding: 50px 0px 50px 0px;
+background-color: var(--ThemeColor);
+}
+
+#introduction h1
+{
+width: 60%;
+font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#introduction p
+{
+width: 60%;
+text-align: center;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 
@@ -57,22 +161,36 @@ body
 {
     margin: 0px;
     border: none;
-    background-color: var(--ThemeColor);
+    background-color: white;
 
 }
 .header-section
 {
     /* background-color: var(--headerColor); */
-    background: rgb(54,60,71);
-    background: linear-gradient(131deg, #003C71, 0%, rgb(14, 71, 109) 60%);
+    background: VAR(--headerColor);
+    height: 50px;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+}
+.footer-section
+{
+    /* background-color: var(--headerColor); */
+    background: VAR(--headerColor);
 
     padding: 0px;
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: x-large;
+    text-align: center;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .logo
@@ -87,9 +205,7 @@ body
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* border: black solid; */
     font-weight: bold;
-    width: 10%;
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 50px;
 }
 
 .search-section
@@ -98,9 +214,6 @@ body
     text-align: center;
     padding-top: 30px;
     margin: 0px;
-    background-color: var(--ThemeColor);
-    border: solid var(--ThemeColor);
-
 }
 
 .previous-searches-results
@@ -139,11 +252,29 @@ margin-right: auto;
     background-color: var(--headerColor);
     border: none;
     border-radius: 5px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
 }
+
+#trynow-button
+{
+    background-color: var(--headerColor);
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+#trynow-button:hover
+{
+    background-color: var(--ThemeColor);
+}
+
 
 #search-icon
 {
