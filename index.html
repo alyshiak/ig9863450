@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets\styles.css">
 
 
@@ -13,18 +13,18 @@
 </head>
 
 
-<body>
+<body class="m-0 bg-white">
     <!-- <input id="search-text"type="text">
     <button id="search-button">Search</button>
     <img id="ai-generate-image" src="" alt="AI image">
      -->
       
      <header>
-        <div class="header-section">
-            <!-- <img src="cloud-icon2.svg" alt="logo" class="logo"> -->
-            <p>AI Art</p>
+        <div class="h-12 p-0 text-black flex flex-row justify-between items-center header-section">
+            <!-- <img src="cloud-icon2.svg" alt="logo" class=" w-16 logo"> -->
+            <p class="inline font-bold pl-12">AI Art</p>
 
-            <ul>
+            <ul class='inline-block text-center mr-6 rounded'>
                 <li>
                     How to use
                 </li>
@@ -38,39 +38,37 @@
 
         </div>
     </header>
-
-    <section id="introduction">        
-        <h1>Take your creative possibilities to the next level with AI-generated images and texts</h1>
+    <section  id="introduction">        
+        <h1 class="w-3/5 text-center m-auto">Take your creative possibilities to the next level with AI-generated images and texts</h1>
         <br>
-        <p>Our platform turns your ideas into stunning visuals in just a few clicks. <br><br>
+        <p class='w-6/12 text-center ml-auto mr-auto'>Our platform turns your ideas into stunning visuals in just a few clicks. <br><br>
             Try it out and see the magic for yourself!
             </p>
     </section>
+    <section class="flex flex-wrap text-justify justify-center mt-12" id="vincent">
 
-    <section id="vincent">
+        <p id="kk" class="relative mt-12">
 
-        <p id="kk">
-
-        <img src="assets\image2.jpg" alt="" id="two">
-        <img src="assets\transform.jpg" alt="" id="one">
+        <img src="assets\image2.jpg" alt="" class="absolute w-64 mr-5" id="two">
+        <img src="assets\transform.jpg" alt="" class="relative w-64 mr-5" id="one">
 
          </p>
 
         <div>
-            <h1>Vincient</h1>
+            <h1 class="font-bold text-xl">Vincient</h1>
             <p>Vincent is AI-powered image generator that allows you to create multiple unique images from a single piece of text. Simply type in your desired text and watch as our platform produces a variety of visually stunning options for you to choose from. 
 
             <br><br>Give it a try and see how the AI technology can elevate your project to the next level.</p>
-            <input type="button" value="Try now" id="trynow-button">
+            <input class="rounded text-black p-1 pl-4 pr-4 font-bold" type="button" value="Try now" id="trynow-button">
 
         </div>
 
         </p>
     </section>
 <br><br>
-    <section id="kafka">        
+    <section class="flex flex-wrap text-justify justify-center mt-12" id="kafka">        
         <div>
-            <h1>TweetInspector</h1>
+            <h1 class="font-bold text-xl">TweetInspector</h1>
             <p> TweetInspector is a powerful tool that helps to promote equality and 
                 inclusivity online. By using advanced artificial technology, it is able to quickly and 
                 accurately scan text for any instances of racism, hate speech, gender bias, and discrimination. 
@@ -78,63 +76,64 @@
                 Simply copy and paste your text into our the search bar and let the technology do the rest. 
                 With TweetInspector, you can be confident that your words are respectful and inclusive.
             </p>
-            <input type="button" value="Try now" id="trynow-button">
+            <input class="rounded text-black p-1 pl-4 pr-4 font-bold" type="button" value="Try now" id="trynow-button">
 
         </div>
         <p id="kk">
 
-            <img src="assets\kafka.jpg" alt="" id="two">
-            <img src="assets\transform.jpg" alt="" id="one">
+            <img src="assets\kafka.jpg" alt="" class="absolute w-64 mr-5" id="two">
+            <img src="assets\transform.jpg" alt="" class="relative w-64 mr-5" id="one">
     
              </p>
     
         </p>
     </section>
 
-    <section class="search-section search-section-animate">
+    <section class="text-center pt-8 m-0 search-section search-section-animate">
         <h1>Vincient</h1>
 
-        <p id="error-message"> </p>
+        <p class="h-5 m-0 text-blue-900" id="error-message"> </p>
         <span id="search-icon">⌕</span>
-        <input type="search" id="search-text" placeholder="Type the image description here.." autocomplete="off"></input>
-        <input type="button" value="Search" id="search-button">
-        <p id="previous-searches"></p>
-        <div class="image-grid">
-            <a href="image1.jpg" download="image1.jpg"><img  class="ai-generate-image" id="ai-generate-image1" src="assets\image1.jpg" alt="AI image"></a>
-            <img  class="ai-generate-image" id="ai-generate-image2" src="assets\image2.jpg" alt="AI image">
-            <img  class="ai-generate-image" id="ai-generate-image3" src="assets\image3.jpg" alt="AI image">
-            <img  class="ai-generate-image" id="ai-generate-image4" src="assets\image4.jpg" alt="AI image">
-            <img  class="ai-generate-image" id="ai-generate-image5" src="assets\image5.jpg" alt="AI image">
-            <img  class="ai-generate-image" id="ai-generate-image6" src="assets\image6.jpg" alt="AI image">
-            <img  class="ai-generate-image" id="ai-generate-image7" src="assets\image7.jpg" alt="AI image">
-            <img  class="ai-generate-image" id="ai-generate-image8" src="assets\image8.jpg" alt="AI image">
-            <img  class="ai-generate-image" id="ai-generate-image9" src="assets\image9.jpg" alt="AI image">
+        <input class='bg-transparent w-6/12 h-8 resize-none' type="search" id="search-text" placeholder="Type the image description here.." autocomplete="off"></input>
+        <input class="rounded text-black p-1 pl-4 pr-4" type="button" value="Search" id="search-button">
+        <p class="pb-2 w-6/12 ml-auto mr-auto" id="previous-searches"></p>
+        <div class="flex justify-center flex-wrap ml-auto mr-auto w-3/5">
+            <a href="image1.jpg" download="image1.jpg"><img class="w-56 h-56 m-1" id="ai-generate-image1" src="assets\image1.jpg"
+                    alt="AI image"></a>
+            <img  class="w-56 h-56 m-1" id="ai-generate-image2" src="assets\image2.jpg" alt="AI image">
+            <img  class="w-56 h-56 m-1" id="ai-generate-image3" src="assets\image3.jpg" alt="AI image">
+            <img  class="w-56 h-56 m-1" id="ai-generate-image4" src="assets\image4.jpg" alt="AI image">
+            <img  class="w-56 h-56 m-1" id="ai-generate-image5" src="assets\image5.jpg" alt="AI image">
+            <img  class="w-56 h-56 m-1" id="ai-generate-image6" src="assets\image6.jpg" alt="AI image">
+            <img  class="w-56 h-56 m-1" id="ai-generate-image7" src="assets\image7.jpg" alt="AI image">
+            <img  class="w-56 h-56 m-1" id="ai-generate-image8" src="assets\image8.jpg" alt="AI image">
+            <img  class="w-56 h-56 m-1" id="ai-generate-image9" src="assets\image9.jpg" alt="AI image">
         </div>
 
     </section>
 
-    <section class="search-section search-section-animate">
+    <section class="text-center pt-8 m-0 search-section search-section-animate">
 
     <h1>TweetInspector</h1>
     
-    <p id="error-message"> </p>
+    <p class='h-5 m-0 text-blue-900' id="error-message"> </p>
     <span id="search-icon">⌕</span>
-    <input type="text" id="search-text" placeholder="Type your tweet here.." autocomplete="off"></input>
-    <input type="button" value="Search" id="search-button">
-    <p id="previous-searches"></p>
+    <input class="bg-transparent w-6/12 h-8 resize-none" type="text" id="search-text" placeholder="Type your tweet here.." autocomplete="off"></input>
+    <input class="rounded text-black p-1 pl-4 pr-4" type="button" value="Search" id="search-button">
+    <p class='pb-2 w-6/12 ml-auto mr-auto' id="previous-searches"></p>
 </section>
 
 
 <br><br>
     <footer>
-        <div class="footer-section">
+        <div class="p-0 text-black flex flex-row justify-center items-center text-center footer-section">
             <!-- <img src="cloud-icon2.svg" alt="logo" class="logo"> -->
             <p>Powered by OpenAI</p>
 
 
         </div>
     </footer>
-
+<script src="https://cdn.tailwindcss.com"></script>
 <script src="assets\script.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
