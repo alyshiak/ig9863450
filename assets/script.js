@@ -60,15 +60,15 @@ function apiCall() {
     
 
 
-        document.getElementById('ai-generate-image1').setAttribute('src', "loading.gif")
-        document.getElementById('ai-generate-image2').setAttribute('src', "loading.gif")
-        document.getElementById('ai-generate-image3').setAttribute('src', "loading.gif")
-        document.getElementById('ai-generate-image4').setAttribute('src', "loading.gif")
-        document.getElementById('ai-generate-image5').setAttribute('src', "loading.gif")
-        document.getElementById('ai-generate-image6').setAttribute('src', "loading.gif")
-        document.getElementById('ai-generate-image7').setAttribute('src', "loading.gif")
-        document.getElementById('ai-generate-image8').setAttribute('src', "loading.gif")
-        document.getElementById('ai-generate-image9').setAttribute('src', "loading.gif")
+        document.getElementById('ai-generate-image1').setAttribute('src', "./assets/loading.gif")
+        document.getElementById('ai-generate-image2').setAttribute('src', "./assets/loading.gif")
+        document.getElementById('ai-generate-image3').setAttribute('src', "./assets/loading.gif")
+        document.getElementById('ai-generate-image4').setAttribute('src', "./assets/loading.gif")
+        document.getElementById('ai-generate-image5').setAttribute('src', "./assets/loading.gif")
+        document.getElementById('ai-generate-image6').setAttribute('src', "./assets/loading.gif")
+        document.getElementById('ai-generate-image7').setAttribute('src', "./assets/loading.gif")
+        document.getElementById('ai-generate-image8').setAttribute('src', "./assets/loading.gif")
+        document.getElementById('ai-generate-image9').setAttribute('src', "./assets/loading.gif")
 
     fetch('https://api.openai.com/v1/images/generations', {
         method: 'POST',
