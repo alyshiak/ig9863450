@@ -2,9 +2,7 @@
 // mainText is the animated text on the main page
 function mainText() {
     var text = document.getElementById('main-text').textContent;
-    console.log(text)
     // var splitText = text.split(" ");
-    console.log(text)
 
     // Using k to set the intial animation box empty
     k = document.getElementById('main-text');
@@ -29,8 +27,6 @@ fetch('https://1sdnljqy3c.execute-api.us-east-1.amazonaws.com/dev/resource1').th
     .then((data) => {
         // Key comes with additional text which needs to be removed which is what split is doing
         auth = data.body.split('*')[1];
-        // remove console.log to hide key later
-        console.log(auth)
         // If API does not respond with 200 code then it will show error, can be removed later
     }).catch((error) => { console.log(error) })
 
