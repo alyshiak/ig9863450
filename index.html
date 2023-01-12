@@ -11,6 +11,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="icon.png">
 ​
+<!-- Using Tailwind instead of Bootstrap to provide CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 ​
 ​
@@ -22,7 +23,7 @@
 ​
     <header>
         <div
-            class="h-auto  p-0 text-black flex flex-col justify-between items-center bg-gray-900 text-white w-full sm:flex sm:flex-row ">
+            class="h-auto  p-0 flex flex-col justify-between items-center bg-gray-900 text-white w-full sm:flex-row "> <!-- CSS parameters used by Tailwind -->
             <div class="pl-3 flex justify-between">
                 <div class=" flex sm:flex-row md:justify-start flex-col items-center">
                     <img class="w-20" src="./assets/icon.png" alt="logo">
@@ -46,7 +47,7 @@
         </div>
     </header>
 ​
-    <section class="pb-20 text-white pt-20 h-auto relative" style="background-image: url('./assets/main.png')">
+    <section class="py-20 text-white h-auto relative" style="background-image: url('./assets/main.png')">
         <h1 class="text-4xl font-extrabold bg-gray-900  md:mt-20 p-10 w-4/5 md:3/5 text-center m-auto text-4xl"
             id="main-text" style="background-color: rgba(18, 1, 45, 0.6)">Take your creative possibilities to the next
             level <br> with
@@ -104,7 +105,7 @@
             <img src="assets\kafka.jpg" alt="Twitter image" class="w-[250px] rounded-[25px] relative ">
         </p>
 ​
-        <div class="md:w-6/12 md:text-left md:pr-10 py-10 w-9/12 text-center">
+        <div class="md:w-1/2 md:text-left md:pr-10 py-10 w-3/6 text-center">
             <h1 class="text-xl inline font-extrabold text-xl">TweetInspector</h1>
             <p class="mt-5 block text-justify">TweetInspector is a powerful tool that helps to promote equality and
                 inclusivity online. By using advanced artificial technology, it is able to quickly and
