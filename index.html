@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-​
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,27 +10,27 @@
     <!-- <link rel="stylesheet" href="assets\styles.css"> -->
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="icon.png">
-​
+
     <script src="https://cdn.tailwindcss.com"></script>
-​
-​
+
+
     <title>ImageGenie</title>
 </head>
-​
-​
+
+
 <body class="m-0 bg-white">
-​
+
     <header>
         <div
             class="h-auto  p-0 text-black flex flex-col justify-between items-center bg-gray-900 text-white w-full sm:flex sm:flex-row ">
             <div class="pl-3 flex justify-between">
                 <div class=" flex sm:flex-row md:justify-start flex-col items-center">
-                    <img class="w-20" src="./assets/icon.png" alt="logo">
+                    <img class="w-20" src="icon.png" alt="logo">
                     <span class=" text-2xl font-semibold py-1">ImageGenie</span>
-​
+
                 </div>
             </div>
-​
+
             <ul class=' block py-2 text-center sm:inline  '>
                 <li class="py-2 hover:bg-gray-600 w-[200px] block cursor-pointer sm:px-5 sm:inline ">
                     About IG
@@ -42,19 +42,19 @@
                     Roadmap
                 </li>
             </ul>
-​
+
         </div>
     </header>
-​
-    <section class="pb-20 text-white pt-20 h-auto relative" style="background-image: url('./assets/main.png')">
+
+    <section class="pb-20 text-white pt-20 h-auto relative" style="background-image: url('main.png')">
         <h1 class="text-4xl font-extrabold bg-gray-900  md:mt-20 p-10 w-4/5 md:3/5 text-center m-auto text-4xl"
             id="main-text" style="background-color: rgba(18, 1, 45, 0.6)">Take your creative possibilities to the next
             level <br> with
             AI-generated images and texts
         </h1>
-​
+
         <br>
-​
+
         <div class='w-full text-center ml-auto mr-auto flex flex-col justify-center items-center md:flex-row md:w-6/12'>
             <a href="https://www.google.com"
                 class="m-2 w-4/12 text-black text-lg font-semibold px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-600 hover:text-white">Learn
@@ -63,47 +63,47 @@
                 class="w-4/12 text-black text-lg font-semibold bg-black px-4 py-2 rounded-lg bg-yellow-300 hover:bg-yellow-100">Try
                 now</a>
         </div>
-​
+
         <br><br>
         </div>
     </section>
-​
+
     <section class="md:items-center rounded-lg flex flex-row flex-wrap text-justify justify-center mt-12">
-​
+
         <p class="relative mt-12 w-auto">
             <img src="assets\transform.jpg" alt="vincien backgrond image"
                 class=" w-[250px] rotate-12 rounded-[25px] absolute z-[-1]">
             <img src="assets\image2.jpg" alt="Vincient Image" class="w-[250px] rounded-[25px] relative ">
         </p>
-​
+
         <div class="md:w-6/12 md:text-left md:pl-10 py-10 w-9/12 text-center">
             <h1 class="text-xl inline font-extrabold text-xl">Vincient</h1>
             <p class="mt-5 block text-justify">Vincent is AI-powered image generator that allows you to create multiple
                 unique images from a single
                 piece of text. Simply type in your desired text and watch as our platform produces a variety of visually
                 stunning options for you to choose from.
-​
+
                 <br><br>Give it a try and see how the AI technology can elevate your project to the next level.
             </p>
             <input
                 class="mt-10 rounded text-white py-1 px-4 font-bold bg-gray-600 hover:bg-gray-300 hover:text-black cursor-pointer hover:border-black "
                 type="button" value="Try now" id="trynow-button">
-​
+
         </div>
-​
+
         </p>
     </section>
-​
-​
+
+
     <section
         class="md:items-center md:flex-row-reverse rounded-lg flex flex-row flex-wrap text-justify justify-center mt-12">
-​
+
         <p class="relative mt-12 w-auto">
             <img src="assets\transform.jpg" alt="Twitter backgrond image"
                 class=" w-[250px] rotate-12 rounded-[25px] absolute z-[-1]">
             <img src="assets\kafka.jpg" alt="Twitter image" class="w-[250px] rounded-[25px] relative ">
         </p>
-​
+
         <div class="md:w-6/12 md:text-left md:pr-10 py-10 w-9/12 text-center">
             <h1 class="text-xl inline font-extrabold text-xl">TweetInspector</h1>
             <p class="mt-5 block text-justify">TweetInspector is a powerful tool that helps to promote equality and
@@ -116,42 +116,42 @@
             <input
                 class="mt-10 rounded text-white p-1 pl-4 pr-4 font-bold bg-gray-600 hover:bg-gray-300 hover:text-black cursor-pointer hover:border-black"
                 type="button" value="Try now" id="trynow-button">
-​
+
         </div>
-​
+
         </p>
     </section>
-​
-​
+
+
     <section class="text-center pt-8 m-0">
         <h1 class="text-xl inline font-extrabold text-xl">Vincient</h1>
-​
+
         <p class="h-5 m-0 text-blue-900" id="error-message"> </p>
         <span class="text-3xl">⌕</span>
         <input class='border-b-2 focus:bg-blue-100 border-black bg-transparent w-7/12 h-8 resize-none' type="search"
             id="search-text" placeholder="Type the image description here.." autocomplete="off"></input>
-​
+
         <input
             class="mt-10 rounded text-white p-1 pl-4 pr-4 font-bold bg-gray-600 hover:bg-gray-300 hover:text-black cursor-pointer"
             type="button" value="Search" id="search-button">
-​
+
         <div class=" md:w-7/12 my-5 w-8/12 m-auto bg-blue-100 pb-2 ">
             <p class="py-1 ml-auto mr-auto font-bold" id="previous-searches">Select image size</p>
-​
+
             <form class="flex flex-col justify-center sm:flex-row">
                 <input class="mr-2 pr-5" type="radio" id="small-size" name="image" value="256x256">
                 <label class="md:pr-10 pr-5" for="256x256">256x256px</label>
-​
+
                 <input class="mr-2 pr-5" type="radio" id="medium-size" name="image" value="512x512">
                 <label class="md:pr-10 pr-5" for="512x512">512x512px</label>
-​
+
                 <input class="mr-2 pr-5" type="radio" id="large-size" name="image" value="1024x1024">
                 <label class="md:pr-10 pr-5" for="1024x1024">1024x1024px</label>
-​
+
             </form>
-​
+
         </div>
-​
+
         <div class="flex justify-center flex-wrap ml-auto mr-auto w-4/5 md:w-3/5 lg:w-3/5">
             <a href="image1.jpg" download="image1.jpg"><img class="w-56 h-56 m-1" id="ai-generate-image1"
                     src="assets\image1.jpg" alt="AI image"></a>
@@ -164,25 +164,25 @@
             <img class="w-56 h-56 m-1" id="ai-generate-image8" src="assets\image8.jpg" alt="AI image">
             <img class="w-56 h-56 m-1" id="ai-generate-image9" src="assets\image9.jpg" alt="AI image">
         </div>
-​
+
     </section>
-​
+
     <section class="text-center pt-8 m-0 search-section search-section-animate">
-​
+
         <h1 class="text-xl inline font-extrabold text-xl">TweetInspector</h1>
-​
+
         <p class="h-5 m-0 text-blue-900" id="error-message"> </p>
         <span class="text-3xl">⌕</span>
         <input class='border-b-2 focus:bg-blue-100 border-black bg-transparent w-7/12 h-8 resize-none' type="search"
             id="tweet-text" placeholder="Type or paste your tweet here.." autocomplete="off"></input>
-​
+
         <input class="mt-10 rounded text-black p-1 pl-4 pr-4 font-bold bg-blue-100" type="button" value="Search"
             id="tweet-search-button">
-​
+
         <p class="bg-blue-200 p-4 w-8/12 m-auto mt-10" id="tweet-result"> </p>
     </section>
     <br><br>
-​
+
     <footer>
         <div class="bg-yellow-100 p-0 text-black flex flex-row justify-center items-center text-center footer-section">
             <p>Powered by OpenAI</p>
@@ -190,7 +190,7 @@
     </footer>
     <script src="assets\script.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-​
+
 </body>
-​
+
 </html>
