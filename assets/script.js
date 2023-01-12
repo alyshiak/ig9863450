@@ -1,3 +1,66 @@
+// Declaring global variables
+var auth; // storing api key
+var tweetResult;
+
+
+
+function displayVincentSearch()
+{
+    document.getElementById("vincient-search-section").classList.add('block')
+    document.getElementById("vincient-search-section").classList.remove('hidden')
+    document.getElementById("vincent-hide-button").classList.add('block')
+    document.getElementById("vincent-hide-button").classList.remove('hidden')
+    document.getElementById("vincent-trynow-button").classList.add('hidden')  
+    document.getElementById("vincent-trynow-button").classList.remove('block')  
+}
+
+function hideVincentSearch()
+{
+    document.getElementById("vincient-search-section").classList.add('hidden')
+    document.getElementById("vincient-search-section").classList.remove('block')
+    document.getElementById("vincent-hide-button").classList.add('hidden')
+    document.getElementById("vincent-hide-button").classList.remove('block')
+    document.getElementById("vincent-trynow-button").classList.add('block')  
+    document.getElementById("vincent-trynow-button").classList.remove('hidden')  
+}
+
+function hideTwitterSearch()
+{
+    document.getElementById("twitter-inspector-search-section").classList.add('hidden')
+    document.getElementById("twitter-inspector-search-section").classList.remove('block')
+    document.getElementById("twitter-inspector-hide-button").classList.add('hidden')
+    document.getElementById("twitter-inspector-hide-button").classList.remove('block')
+    document.getElementById("twitter-trynow-button").classList.add('block')  
+    document.getElementById("twitter-trynow-button").classList.remove('hidden')  
+}
+
+
+function displayTwitterSearch()
+{
+    document.getElementById("twitter-inspector-search-section").classList.add('block')
+    document.getElementById("twitter-inspector-search-section").classList.remove('hidden')
+    document.getElementById("twitter-inspector-hide-button").classList.add('block')
+    document.getElementById("twitter-inspector-hide-button").classList.remove('hidden')
+    document.getElementById("twitter-trynow-button").classList.add('hidden')  
+    document.getElementById("twitter-trynow-button").classList.remove('block')  
+
+}
+
+
+document.getElementById('vincent-trynow-button').addEventListener("click", displayVincentSearch)
+document.getElementById('twitter-trynow-button').addEventListener("click", displayTwitterSearch)
+
+document.getElementById('vincent-hide-button').addEventListener("click", hideVincentSearch)
+
+document.getElementById('twitter-inspector-hide-button').addEventListener("click", hideTwitterSearch)
+
+
+document.getElementById('search-text').addEventListener("keypress", (event)=>{console.log(event); if (event.key === "Enter") {apiCall()}}) //API call when Enter is pressed on Vincent search box
+document.getElementById('tweet-text').addEventListener("keypress", (event)=>{console.log(event); if (event.key === "Enter") {checkTweet()}}) //API call when Enter is pressed on TwitterInspector search box
+
+document.getElementById('vincent-search-button').addEventListener("click", apiCall) //API call when Vincent search button is pressed
+document.getElementById('tweet-search-button').addEventListener("click", checkTweet) //API call when TweetInspector search button is presses
+
 
 // mainText is the animated text on the main page
 function mainText() {
@@ -15,13 +78,6 @@ function mainText() {
 
 }
 
-// Declaring global variables
-var auth; // storing api key
-var tweetResult;
-/* Commenting out as needs to be removed at a later time
-var images = document.getElementById('ai-generate-image1');
-*/
-
 // Fetching the key for the api and storing it in auth, needs to be stored outside of the javascript
 fetch('https://1sdnljqy3c.execute-api.us-east-1.amazonaws.com/dev/resource1').then((response) => { return response.json() })
     .then((data) => {
@@ -30,8 +86,6 @@ fetch('https://1sdnljqy3c.execute-api.us-east-1.amazonaws.com/dev/resource1').th
         // If API does not respond with 200 code then it will show error, can be removed later
     }).catch((error) => { console.log(error) })
 
-document.getElementById('search-button').addEventListener("click", apiCall) //API call when Vincent search button is pressed
-document.getElementById('tweet-search-button').addEventListener("click", checkTweet) //API call when TweetInspector search button is presses
 
 // This function will fetch images and display them
 function apiCall() {
@@ -106,6 +160,16 @@ function apiCall() {
         document.getElementById('ai-generate-image8').setAttribute('src', data.data[0].url)
         document.getElementById('ai-generate-image9').setAttribute('src', data.data[0].url)
 
+        document.getElementById('ai-generate-image-atag1').setAttribute('href', data.data[0].url)
+        document.getElementById('ai-generate-image-atag2').setAttribute('href', data.data[0].url)
+        document.getElementById('ai-generate-image-atag3').setAttribute('href', data.data[0].url)
+        document.getElementById('ai-generate-image-atag4').setAttribute('href', data.data[0].url)
+        document.getElementById('ai-generate-image-atag5').setAttribute('href', data.data[0].url)
+        document.getElementById('ai-generate-image-atag6').setAttribute('href', data.data[0].url)
+        document.getElementById('ai-generate-image-atag7').setAttribute('href', data.data[0].url)
+        document.getElementById('ai-generate-image-atag8').setAttribute('href', data.data[0].url)
+        document.getElementById('ai-generate-image-atag9').setAttribute('href', data.data[0].url)
+
     }).catch((error) => { console.log(error) })
 }
 
@@ -129,6 +193,7 @@ function checkTweet() {
                 'temperature': 0
             })
         }).then((response) => { return response.json() }).then((data) => {
+            document.getElementById('tweet-result').textContent = "";
             document.getElementById('tweet-result').append(data.choices[0].text)
         });
     }
