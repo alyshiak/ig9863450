@@ -86,12 +86,25 @@ fetch('https://1sdnljqy3c.execute-api.us-east-1.amazonaws.com/dev/resource1').th
         // If API does not respond with 200 code then it will show error, can be removed later
     }).catch((error) => { console.log(error) })
 
-
+var arrayOfPreviousSearches = []
+var obj = {arrayOfPreviousSearches: []}; 
 // This function will fetch images and display them
 function apiCall() {
     console.log('event called')
     var userTextInput = document.getElementById('search-text').value;
-
+    if (!obj.arrayOfPreviousSearches.includes(userTextInput)) 
+    {
+    obj.arrayOfPreviousSearches.push(userTextInput)
+    localStorage.setItem('previous-searches', JSON.stringify(obj))
+    var previousSearchesItem = document.createElement('button');
+    previousSearchesItem.textContent = userTextInput;
+    document.getElementById('previous-searches').appendChild(previousSearchesItem);
+    }
+    document.getElementById('previous-searches').lastElementChild.addEventListener("click", (event)=> {
+        document.getElementById('search-text').value = event.target.textContent;
+        apiCall();
+    });
+    document.getElementById('previous-searches').lastElementChild.setAttribute('class','bg-gray-700 p-2 m-1 text-white rounded-[10px]')
     const radioButtons = document.querySelectorAll('input[name="image"]');
 
     // Checking which radio button is selected for image size
@@ -174,10 +187,24 @@ function apiCall() {
 }
 
 
-
+var arrayOfPreviousTweets =[]
+var objTweet ={arrayOfPreviousTweets: []}; 
 function checkTweet() {
 
     var userTextInput = document.getElementById('tweet-text').value;
+    if (!objTweet.arrayOfPreviousTweets.includes(userTextInput)) 
+            {
+            objTweet.arrayOfPreviousTweets.push(userTextInput)
+            localStorage.setItem('previous-tweet', JSON.stringify(objTweet))
+            var previousTweetItem = document.createElement('button');
+            previousTweetItem.textContent = userTextInput;
+            document.getElementById('previous-tweet').appendChild(previousTweetItem);
+            }
+            document.getElementById('previous-tweet').lastElementChild.addEventListener("click", (event)=> {
+                document.getElementById('tweet-text').value = event.target.textContent;
+                checkTweet();
+            });
+            document.getElementById('previous-tweet').lastElementChild.setAttribute('class','bg-gray-700 p-2 m-1 text-white rounded-[10px]')
     // Search parameters provided by API
     if (userTextInput !== "") {
         fetch('https://api.openai.com/v1/completions', {
