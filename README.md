@@ -9,6 +9,10 @@ Zafar Ahmed, Alyshia Kandler, Callum Mackintosh
 # Techinical details
 
 -APIs
+<p align="center">
+  <img src="assets/images/APIs.jpg" />
+</p>
+
 -OpenAI
 -Tailwind
 
