@@ -31,6 +31,10 @@ Kafka is an application that generates short stories with corresponding images. 
 
 Additionally, we aim to make ImageGenie more accessible to a wider range of users by developing a user-friendly and intuitive interface and supporting multiple languages. We believe that by making the application more user-friendly, it will be easier for users to harness the power of AI to generate images and text for a variety of use cases.
 
+<p align="center">
+  <img src="assets/images/roadmap.jpg" />
+</p>
+
 # Screenshots
 
 - Desptop view
