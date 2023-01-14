@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets\css\reset.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+
+<!-- Using Tailwind instead of Bootstrap to provide CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>ImageGenie</title>
+</head>
+
+
+<body class="m-0 bg-white">
+
+<!-- Header section -->
+
+    <header>
+        <div
+            class="h-auto  p-0 flex flex-col justify-between items-center bg-gray-900 text-white w-full sm:flex-row "> <!-- CSS parameters used by Tailwind -->
+            <div class="pl-3 flex justify-between">
+                <div class=" flex sm:flex-row md:justify-start flex-col items-center">
+                    <img class="w-20" src="assets/icon.png" alt="logo">
+                    <span class=" text-2xl font-semibold py-1">ImageGenie</span>
+
+                </div>
+            </div>
+
+            <ul class=' block py-2 text-center sm:inline  '>
+                <li class="py-2 hover:bg-gray-600 w-[200px] block cursor-pointer sm:px-5 sm:inline ">
+                    About IG
+                </li>
+                <li class="py-2 hover:bg-gray-600 w-[200px] block cursor-pointer sm:px-5 sm:inline ">
+                    Team
+                </li>
+                <li class="py-2 hover:bg-gray-600 w-[200px] block cursor-pointer sm:px-5 sm:inline ">
+                    Roadmap
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+
+    
+    <!-- TwitterInspector intro section -->
+
+    <section id="twitter-inspector-section"
+        class="md:items-center  rounded-lg flex flex-row flex-wrap text-justify justify-center mt-12">
+
+
+        <div class="md:w-6/12 md:text-left md:pr-10 py-10 w-9/12 text-center">
+
+            <h1 class="text-2xl inline font-extrabold ">Roadmap</h1><br><br>
+            <p class="mt-5 block text-justify">AI is evolving is so is our project. The future roadmap for 
+                ImageGenie includes several exciting developments and new features.
+            </p><br>
+
+            <h1 class="text-lg inline font-bold ">Twitter API</h1>
+            <p class="mt-5 block text-justify">In the near term, we plan to integrate our TwitterInspector 
+                with Twitter to provide better user experience. The application for the developers account 
+                has been approved and currently our team is working on exploring ways in which we can 
+                incorporate the API into our application.
+            </p><br>
+
+            <h1 class="text-lg inline font-bold ">Project Kafka</h1>
+            <p class="mt-5 block text-justify">Kafka is an application that generates short stories with 
+                corresponding images. It allows users to input a short description of the story they would 
+                like to create, and the application generates a unique, engaging story with corresponding 
+                images that bring the narrative to life.
+            </p><br>
+
+            <h1 class="text-lg inline font-bold ">Improving User interface</h1>
+            <p class="mt-5 block text-justify">Additionally, we aim to make ImageGenie more accessible 
+                to a wider range of users by developing a user-friendly and intuitive interface and 
+                supporting multiple languages. We believe that by making the application more user-friendly, 
+                it will be easier for users to harness the power of AI to generate images and text for a 
+                variety of use cases.
+            </p><br>
+
+        </div>
+        <p class="relative mt-12 w-auto">
+            <img src="assets\roadmap.jpg" alt="Twitter image" class="w-[350px] relative ">
+        </p>
+
+    </section>
+
+
+    <!-- TwitterInspector search section -->
+
+    <section id="twitter-inspector-search-section" class="hidden text-center pt-8 m-0 search-section search-section-animate">
+
+        <h1 class="text-xl inline font-extrabold text-xl">TweetInspector</h1>
+
+        <p class="h-5 m-0 text-blue-900" id="error-message"> </p>
+
+        <div class="flex flex-col items-center sm:block">
+            <span class="text-3xl">⌕</span>
+
+            <input class='p-2 border-b-2 focus:bg-blue-100 border-black bg-transparent w-7/12 h-8 resize-none' type="search"
+            id="tweet-text" placeholder="Type or paste your tweet here.." autocomplete="off"></input>
+
+        <!-- TwitterInspector search button -->
+        <input class="mt-10 rounded text-black p-1 pl-4 pr-4 font-bold bg-blue-100" type="button" value="Search"
+            id="tweet-search-button">
+        </div>
+
+        <p class="bg-blue-200 p-4 w-8/12 m-auto mt-10" id="tweet-result"> </p>
+    </section>
+    <br><br>
+
+    <footer>
+        <div class="bg-gray-900 p-0 text-white flex flex-row justify-center items-center text-center footer-section">
+            <p>Powered by </p>
+            <img class = "w-20" src="assets/openai.png" alt="openai logo">
+        </div>
+    </footer>
+    <script src="assets/script.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</body>
+
+</html>
