@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="assets\styles.css"> -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="icon.png">
+​
+    <script src="https://cdn.tailwindcss.com"></script>
+​
+​
+    <title>ImageGenie</title>
+</head>
+​
+​
+<body class="m-0 bg-white">
+​
+<header>
+    <div
+        class="h-auto  p-0 flex flex-col justify-between items-center bg-gray-900 text-white w-full sm:flex-row "> <!-- CSS parameters used by Tailwind -->
+        <div class="pl-3 flex justify-between">
+            <div class=" flex sm:flex-row md:justify-start flex-col items-center">
+                <img class="w-20" src="/assets/images/icon.png" alt="logo">
+                <a href="./index.html"><span class=" text-2xl font-semibold py-1">ImageGenie</span></a>
+
+            </div>
+        </div>
+            <ul class=' block py-2 text-center sm:inline  '>
+                <a href="index.html" class="py-2 hover:bg-gray-600 w-[200px] block cursor-pointer sm:px-5 sm:inline ">
+                    Home
+                </a>
+                <li class="py-2 hover:bg-gray-600 w-[200px] block cursor-pointer sm:px-5 sm:inline ">
+                    <a href="./assets/html/team.html">Team</a>
+                </li>
+                <li class="py-2 hover:bg-gray-600 w-[200px] block cursor-pointer sm:px-5 sm:inline ">
+                    <a href="./assets/html/roadmap.html">Roadmap</a>
+                </li>
+            </ul>
+​
+        </div>
+    </header>
+​
+    <section class="md:items-center rounded-lg flex flex-row flex-wrap text-justify justify-center mt-12">
+​
+        <p class="relative mt-12 w-auto">
+            <img src="/assets/images/transform.jpg" alt="vincien backgrond image"
+                class=" w-[250px] rotate-12 rounded-[180px] absolute z-[-1]">
+            <img src="/assets/images/icon.png" alt="Logo Image" class="w-[250px] rounded-[180px] relative ">
+        </p>
+​
+        <div class="md:w-6/12 md:text-left md:pl-10 py-10 w-9/12 text-center">
+            <h1 class="text-xl inline font-extrabold text-xl">About ImageGenie</h1>
+            <p class="mt-5 block text-justify">ImageGenie was created using AI technology which gives you the power to generate an image based off a simple prompt or to screen a tweet for discrimination of any kind.
+                
+                <br><br>Vincent, named after the artist Vincent Van Gogh, allows you to create an image with a simple prompt of what you would like the image to be. You can be creative with your prompts and create art, funny images, realistic images, characters etc. The posibilities are endless with Vincent.
+
+                <br><br>TweetInspector is a service which screens a Tweet for any form of discrimination. Simply enter the Tweet which has been posted or you would like to post and you will be returned an answer stating whether or not the Tweet in question contains any discrimation towards race, gender, age etc. 
+​
+            </p>
+        </div>
+​
+        </p>
+    </section>
+​
+    <footer>
+        <div class="bg-yellow-100 p-0 text-black flex flex-row justify-center items-center text-center footer-section">
+            <p>Powered by OpenAI</p>
+        </div>
+    </footer>
+    <script src="./assets/script.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+​
+</body>
+​
+</html>
