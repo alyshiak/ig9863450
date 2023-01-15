@@ -97,7 +97,7 @@ function apiCall() {
         errorMessage.textContent = "Please enter a prompt for Vincent"
         return false;
         }
-    if (!obj.arrayOfPreviousSearches.includes(userTextInput)) 
+    if ((!obj.arrayOfPreviousSearches.includes(userTextInput)) && (document.getElementById('small-size').checked == true)||(document.getElementById('medium-size').checked == true)||(document.getElementById('large-size').checked == true)) 
     {
     obj.arrayOfPreviousSearches.push(userTextInput)
     localStorage.setItem('previous-searches', JSON.stringify(obj))
@@ -122,14 +122,12 @@ function apiCall() {
             selectedImageSize = radioButtons[i].value;
         }
     }
-
     // If no button is selected then error message will display for 3 seconds
     if (selectedImageSize === "")
         {
             document.getElementById('error-message').textContent = "Please select an image size"
             setTimeout(()=>{document.getElementById('error-message').textContent = ""},3000)
-
-            return
+            return 
         }
     
     // If text field is empty then error will prompt to have text input, will display for 3 seconds
