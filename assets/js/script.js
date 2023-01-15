@@ -92,6 +92,11 @@ var obj = {arrayOfPreviousSearches: []};
 function apiCall() {
     console.log('event called')
     var userTextInput = document.getElementById('search-text').value;
+    if (userTextInput === ""){
+        var errorMessage = document.getElementById('error-message')
+        errorMessage.textContent = "Please enter a prompt for Vincent"
+        return false;
+        }
     if (!obj.arrayOfPreviousSearches.includes(userTextInput)) 
     {
     obj.arrayOfPreviousSearches.push(userTextInput)
@@ -192,6 +197,11 @@ var objTweet ={arrayOfPreviousTweets: []};
 function checkTweet() {
 
     var userTextInput = document.getElementById('tweet-text').value;
+    if (userTextInput === ""){
+        var errorTweet = document.getElementById('tweet-error')
+        errorTweet.textContent = "Please enter a Tweet"
+        return false;
+        }
     if (!objTweet.arrayOfPreviousTweets.includes(userTextInput)) 
             {
             objTweet.arrayOfPreviousTweets.push(userTextInput)
