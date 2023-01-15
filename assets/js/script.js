@@ -203,7 +203,7 @@ function apiCall(event) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer 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'
+                'Authorization': auth
             },
             body: JSON.stringify({
                 'prompt': userTextInput,
@@ -268,7 +268,7 @@ function checkTweet() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer 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'
+                'Authorization': auth
             },
             body: JSON.stringify({
                 'model': 'text-davinci-003', // Model sets which engine you are using
