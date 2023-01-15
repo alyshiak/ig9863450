@@ -47,24 +47,25 @@ document.getElementById('checkbox').addEventListener("click", ()=>{
 //fetchUserSearchHistory function fetches the data from local storage on page load and display on Vincent search section. 
 
 function fetchUserSearchHistory(){
-    
+    if (localStorage.getItem('previous-searches')!=null)
+    {
     obj = JSON.parse(localStorage.getItem('previous-searches'))
 
     for(var i=0; i<obj.arrayOfPreviousSearches.length; i++)
-    {
+        {
 
-    var previousSearchesItem = document.createElement('button');
-    previousSearchesItem.textContent = obj.arrayOfPreviousSearches[i];
+        var previousSearchesItem = document.createElement('button');
+        previousSearchesItem.textContent = obj.arrayOfPreviousSearches[i];
 
-    document.getElementById('previous-searches').appendChild(previousSearchesItem);
-    document.getElementById('previous-searches').lastElementChild.setAttribute('class', 'bg-gray-500 p-2 m-1 text-white rounded-[10px]')
+        document.getElementById('previous-searches').appendChild(previousSearchesItem);
+        document.getElementById('previous-searches').lastElementChild.setAttribute('class', 'bg-gray-500 p-2 m-1 text-white rounded-[10px]')
 
-    document.getElementById('previous-searches').lastElementChild.addEventListener("click", (event) => {
-        document.getElementById('search-text').value = event.target.textContent;
-        apiCall();
-    });
+        document.getElementById('previous-searches').lastElementChild.addEventListener("click", (event) => {
+            document.getElementById('search-text').value = event.target.textContent;
+            apiCall();
+        });
+        }
     }
-
 }
 
 //displayVincentSearch() function displays the Vincent search section
