@@ -6,10 +6,6 @@ Zafar Ahmed, Alyshia Kandler, Callum Mackintosh
 ImageGenie was created using AI technology which gives you the power to generate an image based off a simple prompt or to screen a tweet for discrimination of any kind.
 
 
- -Motivation beind the app
-
-
-
  # Website address
 
  Deployed address: https://alyshiak.github.io/ig9863450/
@@ -19,18 +15,10 @@ ImageGenie was created using AI technology which gives you the power to generate
  
 # Techinical details
 
--APIs
+- APIs
 <p align="center">
   <img src="assets/images/APIs.jpg" />
 </p>
-
--OpenAI
--Tailwind
-
-Limitations
-- Maximum image searches limit
-- Limited tokens
-- Image sizes
 
 # Roadmap
 
@@ -59,23 +47,8 @@ Additionally, we aim to make ImageGenie more accessible to a wider range of user
 <p align="center">
   <img src="assets/images/screenshots/AboutDesktop.PNG" />
 </p>
-<p align="center">
-  <img src="assets/images/screenshots/TeamDesktop.PNG" />
-</p>
-<p align="center">
-  <img src="assets/images/screenshots/RoadmapDesktop.PNG" />
-</p>
 - Mobile view
 <p align="center">
   <img src="assets/images/screenshots/ImageGenieMobile.PNG" />
-</p>
-<p align="center">
-  <img src="assets/images/screenshots/AboutMobile.PNG" />
-</p>
-<p align="center">
-  <img src="assets/images/screenshots/TeamMobile.PNG" />
-</p>
-<p align="center">
-  <img src="assets/images/screenshots/RoadmapMobile.PNG" />
 </p>
 
