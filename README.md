@@ -58,6 +58,9 @@ Additionally, we aim to make ImageGenie more accessible to a wider range of user
 </p>
 <p align="center">
   <img src="screenshots/AboutDesktop.PNG" />
+<p align="center">
+  <img src="screenshots/TeamDesktop.PNG" />
+</p>
 </p>
 <p align="center">
   <img src="screenshots/RoadmapDesktop.PNG" />
@@ -68,6 +71,9 @@ Additionally, we aim to make ImageGenie more accessible to a wider range of user
 </p>
 <p align="center">
   <img src="screenshots/AboutMobile.PNG" />
+</p>
+<p align="center">
+  <img src="screenshots/TeamMobile.PNG" />
 </p>
 <p align="center">
   <img src="screenshots/RoadmapMobile.PNG" />
