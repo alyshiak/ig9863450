@@ -2,8 +2,19 @@
 Zafar Ahmed, Alyshia Kandler, Callum Mackintosh
 
 # AI Based Content Generator
- -Brief overview
+
+ImageGenie was created using AI technology which gives you the power to generate an image based off a simple prompt or to screen a tweet for discrimination of any kind.
+
+
  -Motivation beind the app
+
+
+
+ # Website address
+
+ Deployed address: https://alyshiak.github.io/ig9863450/
+
+ Github address: https://github.com/alyshiak/ig9863450
  
  
 # Techinical details
