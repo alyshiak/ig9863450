@@ -23,7 +23,7 @@ Limitations
 
 # Roadmap
 
-AI is evolving is so is our project. The future roadmap for ImageGenie includes several exciting developments and new features.
+AI is evolving and so is our project. The future roadmap for ImageGenie includes several exciting developments and new features.
 
 ## Twitter API
 In the near term, we plan to integrate our TwitterInspector with Twitter to provide better user experience. The application for the developers account has been approved and currently our team is working on exploring the ways in which we can incorporate the API into our application.
@@ -42,5 +42,23 @@ Additionally, we aim to make ImageGenie more accessible to a wider range of user
 # Screenshots
 
 - Desptop view
+<p align="center">
+  <img src="screenshots/ImageGenieDesktop.PNG" />
+</p>
+<p align="center">
+  <img src="screenshots/AboutDesktop.PNG" />
+</p>
+<p align="center">
+  <img src="screenshots/RoadmapDesktop.PNG" />
+</p>
 - Mobile view
+<p align="center">
+  <img src="screenshots/ImageGenieMobile.PNG" />
+</p>
+<p align="center">
+  <img src="screenshots/AboutMobile.PNG" />
+</p>
+<p align="center">
+  <img src="screenshots/RoadmapMobile.PNG" />
+</p>
 
