@@ -44,9 +44,6 @@ Additionally, we aim to make ImageGenie more accessible to a wider range of user
 <p align="center">
   <img src="assets/images/screenshots/ImageGenieDesktop.PNG"/>
 </p>
-<p align="center">
-  <img src="assets/images/screenshots/AboutDesktop.PNG" />
-</p>
 - Mobile view
 <p align="center">
   <img src="assets/images/screenshots/ImageGenieMobile.PNG" />
