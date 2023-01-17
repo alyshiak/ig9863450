@@ -207,7 +207,7 @@ function apiCall(event) {
             },
             body: JSON.stringify({
                 'prompt': userTextInput,
-                'n': 1, // Currently set to 1 to save on API credit, to be changed for presentation
+                'n': 9, // Currently set to 1 to save on API credit, to be changed for presentation
                 'size': selectedImageSize
             })
             // changes the image source from placeholder to link provided by AI API
@@ -217,25 +217,25 @@ function apiCall(event) {
 
             //Display images fetched from the API
             document.getElementById('ai-generate-image1').setAttribute('src', data.data[0].url)
-            document.getElementById('ai-generate-image2').setAttribute('src', data.data[0].url)
-            document.getElementById('ai-generate-image3').setAttribute('src', data.data[0].url)
-            document.getElementById('ai-generate-image4').setAttribute('src', data.data[0].url)
-            document.getElementById('ai-generate-image5').setAttribute('src', data.data[0].url)
-            document.getElementById('ai-generate-image6').setAttribute('src', data.data[0].url)
-            document.getElementById('ai-generate-image7').setAttribute('src', data.data[0].url)
-            document.getElementById('ai-generate-image8').setAttribute('src', data.data[0].url)
-            document.getElementById('ai-generate-image9').setAttribute('src', data.data[0].url)
+            document.getElementById('ai-generate-image2').setAttribute('src', data.data[1].url)
+            document.getElementById('ai-generate-image3').setAttribute('src', data.data[2].url)
+            document.getElementById('ai-generate-image4').setAttribute('src', data.data[3].url)
+            document.getElementById('ai-generate-image5').setAttribute('src', data.data[4].url)
+            document.getElementById('ai-generate-image6').setAttribute('src', data.data[5].url)
+            document.getElementById('ai-generate-image7').setAttribute('src', data.data[6].url)
+            document.getElementById('ai-generate-image8').setAttribute('src', data.data[7].url)
+            document.getElementById('ai-generate-image9').setAttribute('src', data.data[8].url)
 
             //Set URL to images fetched from the API
             document.getElementById('ai-generate-image-atag1').setAttribute('href', data.data[0].url)
-            document.getElementById('ai-generate-image-atag2').setAttribute('href', data.data[0].url)
-            document.getElementById('ai-generate-image-atag3').setAttribute('href', data.data[0].url)
-            document.getElementById('ai-generate-image-atag4').setAttribute('href', data.data[0].url)
-            document.getElementById('ai-generate-image-atag5').setAttribute('href', data.data[0].url)
-            document.getElementById('ai-generate-image-atag6').setAttribute('href', data.data[0].url)
-            document.getElementById('ai-generate-image-atag7').setAttribute('href', data.data[0].url)
-            document.getElementById('ai-generate-image-atag8').setAttribute('href', data.data[0].url)
-            document.getElementById('ai-generate-image-atag9').setAttribute('href', data.data[0].url)
+            document.getElementById('ai-generate-image-atag2').setAttribute('href', data.data[1].url)
+            document.getElementById('ai-generate-image-atag3').setAttribute('href', data.data[2].url)
+            document.getElementById('ai-generate-image-atag4').setAttribute('href', data.data[3].url)
+            document.getElementById('ai-generate-image-atag5').setAttribute('href', data.data[4].url)
+            document.getElementById('ai-generate-image-atag6').setAttribute('href', data.data[5].url)
+            document.getElementById('ai-generate-image-atag7').setAttribute('href', data.data[6].url)
+            document.getElementById('ai-generate-image-atag8').setAttribute('href', data.data[7].url)
+            document.getElementById('ai-generate-image-atag9').setAttribute('href', data.data[8].url)
 
         }).catch((error) => {
             
